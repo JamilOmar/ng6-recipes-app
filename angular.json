@@ -45,6 +45,14 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ]
             }
           }
         },
@@ -56,7 +64,11 @@
           "configurations": {
             "production": {
               "browserTarget": "ng-recipes-app:build:production"
+            },
+            "dev": {
+              "browserTarget": "ng-recipes-app:build:dev"
             }
+
           }
         },
         "extract-i18n": {
