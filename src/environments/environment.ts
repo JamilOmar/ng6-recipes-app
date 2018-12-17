@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  firebaseURL : ``
+  firebaseURL : ``,
+  firebaseApiKey: '',
+  firebaseAuthDomain: ''
 };
 
 /*
